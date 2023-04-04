@@ -10,7 +10,19 @@ Scanner input= new Scanner(System.in);
         dikKenar=input.nextInt();
         double hipotenus = Math.sqrt((taban *taban) + (dikKenar *dikKenar));
         System.out.println("hipotenüs: "+ hipotenus);
+// girilen değerlere göre alan hesaplama
+        double alan,cevre;
+        int a,b,c;
+        System.out.println("1. kenarı giriniz: ");
+        a=input.nextInt();
+        System.out.println("2. kenarı giriniz: ");
+        b=input.nextInt();
+        System.out.println("3. kenarı giriniz: ");
+        c=input.nextInt();
+        cevre=(a+b+c)/2;
+        alan=Math.sqrt(cevre*(cevre-a)*(cevre-b)*(cevre-c));
 
+        System.out.println("GİRİLEN ÜCGENİN ALANI: "+alan);
 
 
     }
