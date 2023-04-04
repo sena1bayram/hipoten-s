@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+Scanner input= new Scanner(System.in);
+        int taban, dikKenar;
+        System.out.println("Dik kenarı giriniz: ");
+        taban=input.nextInt();
+        System.out.println("Taban değerini giriniz: ");
+        dikKenar=input.nextInt();
+        double hipotenus = Math.sqrt((taban *taban) + (dikKenar *dikKenar));
+        System.out.println("hipotenüs: "+ hipotenus);
+
+
+
+    }
+}
